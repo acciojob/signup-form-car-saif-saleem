@@ -12,30 +12,30 @@
 </script>
 <form action="#" mtehod="post">
 	<table border="1">
-		<tr>
+<!-- 		<tr>
 	<th>Field</th>
 	<th>Type</th>
 	<th>Required</th>
 	<th>ID</th>
 	<th>Placeholder</th>
-		</tr>
+		</tr> -->
 		<tr>
 		<td>
 		Name	
 		</td>
 		<td>
 		<label for="name"></label>
-        <input id="name" name="username" type="text" />
+        <input id="name" name="username" type="text" required placeholder="Name" />
 		</td>
-		<td>
+<!-- 		<td>
 			Yes
-		</td>
-		<td>
+		</td> -->
+<!-- 		<td>
 			#name
-		</td>
-		<td>
+		</td> -->
+<!-- 		<td>
 			Name
-		</td>
+		</td> -->
 		</tr>
 		<tr>
 		<td>
@@ -43,9 +43,9 @@
 		</td>
 		<td>
 		<label for="email"></label>
-        <input id="email" name="useremail" type="email" />
+        <input id="email" name="useremail" type="email" required placeholder="Email"/>
 		</td>
-		<td>
+<!-- 		<td>
 			Yes
 		</td>
 		<td>
@@ -53,25 +53,28 @@
 		</td>
 		<td>
 			Email
-		</td>
+		</td> -->
 		</tr>
-		
+		<tr>
 		<td>
-		Name	
+		Gender	
 		</td>
 		<td>
-		<label for="username"></label>
-        <input id="username" name="name" type="text" />
+		<label for="gender"></label>
+         <input type="radio" id="gender" name="gender" value="male" required/> Male     
+         <input type="radio" id="gender" name="gender" value="female" required/> Female     
 		</td>
-		<td>
+<!-- 		<td>
 			Yes
 		</td>
 		<td>
-			#name
+			#gender_m, #gender_f
 		</td>
 		<td>
-			Name
-		</td>
+			-
+		</td> -->
+		</tr>
+		
 	</table>
 	
 </form>
